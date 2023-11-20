@@ -118,6 +118,7 @@ aside {
 
 .carousel-item img {
   max-height: 80vh;
+  width: 100% !important;
 }
 
 /* InfoBox */
@@ -379,6 +380,9 @@ aside {
   font-size: 1.2em;
 }
 
+.owl-nav {
+  display: none;
+}
 /* Gallery Section */
 
 .gal-img img {
@@ -403,7 +407,7 @@ aside {
 }
 
 .bg-image {
-  background-image: url("/elixer/img/banners/Desktop_Banner_1.webp");
+  background-image: url("../img/banners/banner1.webp");
   height: 100%;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -687,4 +691,18 @@ aside {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+.nav-link.ami-tab {
+  background-color: transparent;
+  color: var(--colorPrimary);
+  border: 2px solid var(--colorPrimary);
+  border-radius: 0;
+}
+.nav-link.ami-tab.active {
+  color: var(--colorWhite);
+  background-color: var(--colorPrimary);
+}
+.location_features_section .nav-item {
+  border: none;
 }
