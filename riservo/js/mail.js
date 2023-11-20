@@ -60,18 +60,14 @@ window.onload = function () {
         user_name: document.getElementById("user_name").value,
         user_email: document.getElementById("user_email").value,
         contact_number: document.getElementById("contact_number").value,
-        pickup_location: document.getElementById("pickup_location").value,
-        date_time: await get12HourTime(),
-        ip_address: await getIpAddress(),
       };
 
       emailjs.send("contact_service", "contact_form", templateParams).then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
-          alert("Message Sent");
           document.getElementById("contact-form").reset();
           if (response.status === 200) {
-            window.location.href = "/elixer/pages/thank-you.html";
+            window.location.href = "/riservo/pages/thank-you.html";
           }
         },
         function (error) {
@@ -144,18 +140,15 @@ window.onload = function () {
           user_name: document.getElementById("user_name_modal").value,
           user_email: document.getElementById("user_email_modal").value,
           contact_number: document.getElementById("contact_number_modal").value,
-          pickup_location: document.getElementById("pickup_location_modal").value,
-          date_time: await get12HourTime(),
-          ip_address: await getIpAddress(),
         };
 
         emailjs.send("contact_service", "contact_form", templateParams).then(
           function (response) {
             console.log("SUCCESS!", response.status, response.text);
-            alert("Message Sent");
+
             document.getElementById("contact-form-modal").reset();
             if (response.status === 200) {
-              window.location.href = "/elixer/pages/thank-you.html";
+              window.location.href = "/riservo/pages/thank-you.html";
             }
           },
           function (error) {
