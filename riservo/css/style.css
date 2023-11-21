@@ -22,7 +22,7 @@ html {
   --colorBlack: #000000;
   --colorHalfBlack: #333333;
   --colorBackgroundBlack: #343a40bd;
-  --colorGold: ##9d7f1b;
+  --colorGold: #9d7f1b;
 
   /*  
   --main-color: 128, 0, 128; RGBA values for a purplish color 
@@ -36,10 +36,10 @@ html {
   header,
   main,
   footer {
-    width: 78%;
+    width: 80%;
   }
   aside {
-    width: 20%;
+    width: 19%;
     min-height: 100vh;
   }
   body {
@@ -78,16 +78,17 @@ aside {
 /* Navbar */
 
 .navbar-nav {
-  justify-content: space-evenly;
+  /* justify-content: ; */
   width: 100%;
 }
 
 .nav-item {
   border-left: 0.1vw solid var(--colorBorderWhite);
 }
-
-.nav-link {
+.navbar-nav .nav-link {
   color: #000;
+  font-size: 1.01vw !important;
+  letter-spacing: 0.02vw;
 }
 
 .navbar-nav .nav-link.active,
@@ -274,6 +275,7 @@ aside {
   width: 100%;
   font-size: 1.7em;
   text-align: center;
+  color: var(--colorGold);
 }
 /* For Desktop */
 @media only screen and (min-width: 990px) {
