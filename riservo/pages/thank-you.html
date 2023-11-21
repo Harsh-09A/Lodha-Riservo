@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elixer</title>
+    <title>Lodha Riservo</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="../css/style.css" />
 
     <!-- Bootstrap JS -->
-    <script defer src="/elixer/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
-    <script defer src="/elixer/js/script.js"></script>
+    <script defer src="../js/script.js"></script>
 
     <!-- Font Awesome CDN -->
     <link
@@ -34,7 +34,7 @@
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="/elixer/js/mail.js"></script>
+    <script src="../js/mail.js"></script>
   </head>
 
   <body
@@ -52,10 +52,7 @@
         id="main-navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="/index.html">
-            <img
-              src="/elixer/img/logo/lnt-elixir-reserve-powai-logo.webp"
-              alt="Logo"
-              width="150px" />
+            <img src="../img/logo/logo.png" alt="Logo" width="200px" />
           </a>
           <button
             class="navbar-toggler"
@@ -143,7 +140,7 @@
               </li>
               <li class="nav-item ps-1">
                 <a href="tel:+919082586679" class="text-decoration-none text-white">
-                  <i class="fa-solid fa-phone me-2"></i> +919082586679
+                  <i class="fa-solid fa-phone me-2"></i> +919137649917
                 </a>
               </li>
             </ul>
@@ -197,28 +194,6 @@
                     autocomplete="off"
                     required />
                 </div>
-                <div class="mb-3">
-                  <label for="pickup_location" class="form-label">Pickup Address</label>
-                  <input
-                    type="text"
-                    class="form-control inputStyle shadow-none"
-                    name="pickup_location"
-                    id="pickup_location"
-                    placeholder="Pickup Address"
-                    autocomplete="off"
-                    required />
-                </div>
-                <div class="mb-3">
-                  <label for="date_time" class="form-label">Date Time</label>
-                  <input
-                    type="datetime-local"
-                    class="form-control inputStyle shadow-none"
-                    name="date_time"
-                    id="date_time"
-                    placeholder="Date Time"
-                    autocomplete="off"
-                    required />
-                </div>
 
                 <button
                   type="submit"
@@ -227,6 +202,13 @@
                 </button>
               </form>
             </div>
+          </div>
+          <br />
+          <div>
+            <img
+              class="img-fluid p-2 scale-up-center"
+              src="../img/extras/ola-uber-tagline.jpg"
+              alt="" />
           </div>
         </div>
       </aside>
@@ -253,10 +235,7 @@
             <!-- Modal Body -->
             <div class="modal-body">
               <div class="container text-center">
-                <img
-                  src="/elixer/img/logo/lnt-elixir-reserve-powai-logo.webp"
-                  alt=""
-                  width="150px" />
+                <img src="../img/logo/logo.jpg" alt="" width="150px" />
                 <p class="mt-2">Register Here And Avail The Best Offers!!</p>
               </div>
               <div class="container">
@@ -266,62 +245,43 @@
                     Get The Best Quote
                   </span>
                   <div class="container">
-                    <form id="contact-form" class="text-center">
+                    <!-- Form -->
+                    <form id="contact-form-modal" class="text-center">
                       <div class="mb-3">
-                        <label for="user_name" class="form-label">Name</label>
+                        <label for="user_name_modal" class="form-label">Name</label>
                         <input
                           type="text"
                           class="form-control inputStyle shadow-none"
                           name="user_name"
-                          id="user_name"
+                          id="user_name_modal"
                           placeholder="Name"
                           autocomplete="off"
                           required />
                       </div>
+
                       <div class="mb-3">
-                        <label for="user_email" class="form-label">Email address</label>
+                        <label for="user_email_modal" class="form-label"
+                          >Email address</label
+                        >
                         <input
                           type="email"
                           class="form-control inputStyle shadow-none"
                           name="user_email"
-                          id="user_email"
+                          id="user_email_modal"
                           placeholder="Email Address"
                           autocomplete="off" />
                       </div>
+
                       <div class="mb-3">
-                        <label for="contact_number" class="form-label"
+                        <label for="contact_number_modal" class="form-label"
                           >Phone Number</label
                         >
                         <input
                           type="tel"
                           class="form-control inputStyle shadow-none"
                           name="contact_number"
-                          id="contact_number"
+                          id="contact_number_modal"
                           placeholder="Phone Number"
-                          autocomplete="off"
-                          required />
-                      </div>
-                      <div class="mb-3">
-                        <label for="pickup_location" class="form-label"
-                          >Pickup Address</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control inputStyle shadow-none"
-                          name="pickup_location"
-                          id="pickup_location"
-                          placeholder="Pickup Address"
-                          autocomplete="off"
-                          required />
-                      </div>
-                      <div class="mb-3">
-                        <label for="date_time" class="form-label">Date Time</label>
-                        <input
-                          type="datetime-local"
-                          class="form-control inputStyle shadow-none"
-                          name="date_time"
-                          id="date_time"
-                          placeholder="Date Time"
                           autocomplete="off"
                           required />
                       </div>
@@ -347,7 +307,7 @@
     <footer class="footer p-4">
       <!-- Footer -->
       <p class="disclaimer">
-        Disclaimer: We are an authorised marketing partner for this project. Provided
+        Disclaimer: We are an authorized marketing partner for this project. Provided
         content is given by respective owners and this website and content is for
         information purpose only and it does not constitute any offer to avail for any
         services. Prices mentioned are subject to change without prior notice and
@@ -356,7 +316,7 @@
       </p>
       <hr />
       <p class="copyright-text">
-        © Copyright |
+        2023 © Copyright - All Rights Reserved. <br />
         <a href="privacy-policy.html">Terms &amp; Conditions</a>
         |
         <a href="privacy-policy.html">Privacy Policy</a>
@@ -368,12 +328,13 @@
     <!-- Mobile Footer Fixed Button -->
     <div class="container-fluid fixed-bottom action-footer-container">
       <ul class="nav nav-fill action-footer">
-        <li class="nav-item" data-bs-toggle="modal" data-bs-target="#popupModal">
-          <i class="fa-brands fa-whatsapp nav-icon"> </i> Whatsapp
-        </li>
-
         <li class="nav-item ps-1">
-          <a href="tel:+919082586679" class="text-decoration-none text-white">
+          <a href="https://wa.me/919137649917" class="text-decoration-none text-white">
+            <i class="fa-brands fa-whatsapp nav-icon"> </i> Whatsapp
+          </a>
+        </li>
+        <li class="nav-item ps-1">
+          <a href="tel:+919137649917" class="text-decoration-none text-white">
             <i class="fa-solid fa-phone me-2"></i> Call Us
           </a>
         </li>

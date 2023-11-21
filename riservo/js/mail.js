@@ -53,13 +53,16 @@ window.onload = function () {
       }
     }
 
-    // Send Mail
+    // Send Mail Sidebar
     async function sendEmail() {
       // Email template
       var templateParams = {
         user_name: document.getElementById("user_name").value,
         user_email: document.getElementById("user_email").value,
         contact_number: document.getElementById("contact_number").value,
+        // to_email: "diginmediaprivatelimited@gmail.com",
+        to_email: "harsh.autowebbed@gmail.com",
+        company_name: "DIGIN",
       };
 
       emailjs.send("contact_service", "contact_form", templateParams).then(
@@ -67,7 +70,7 @@ window.onload = function () {
           console.log("SUCCESS!", response.status, response.text);
           document.getElementById("contact-form").reset();
           if (response.status === 200) {
-            window.location.href = "/riservo/pages/thank-you.html";
+            window.location.href = "riservo/pages/thank-you.html";
           }
         },
         function (error) {
@@ -133,13 +136,16 @@ window.onload = function () {
         }
       }
 
-      // Send Mail
+      // Send Mail Modal
       async function sendEmail() {
         // Email template
         var templateParams = {
           user_name: document.getElementById("user_name_modal").value,
           user_email: document.getElementById("user_email_modal").value,
           contact_number: document.getElementById("contact_number_modal").value,
+          // to_email: "diginmediaprivatelimited@gmail.com",
+          to_email: "harsh.autowebbed@gmail.com",
+          company_name: "DIGIN",
         };
 
         emailjs.send("contact_service", "contact_form", templateParams).then(
@@ -148,7 +154,7 @@ window.onload = function () {
 
             document.getElementById("contact-form-modal").reset();
             if (response.status === 200) {
-              window.location.href = "/riservo/pages/thank-you.html";
+              window.location.href = "riservo/pages/thank-you.html";
             }
           },
           function (error) {
