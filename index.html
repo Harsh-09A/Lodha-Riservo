@@ -41,6 +41,57 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11418495412"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-11418495412");
+    </script>
+    <!-- End Google tag (gtag.js) -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1541057426668689");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1541057426668689&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body
     data-bs-spy="scroll"
@@ -132,7 +183,10 @@
       <!-- Slider Section -->
       <section id="slider">
         <!-- Slider -->
-        <div id="carousel-Indicators" class="carousel slide" data-bs-ride="carousel">
+        <div
+          id="carousel-Indicators"
+          class="carousel slide"
+          data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button
               type="button"
@@ -235,11 +289,16 @@
           <!-- Sidebar Top Links -->
           <div class="sidebar-top pb-2">
             <ul class="nav nav-fill side-top-block">
-              <li class="nav-item" data-bs-toggle="modal" data-bs-target="#popupModal">
+              <li
+                class="nav-item"
+                data-bs-toggle="modal"
+                data-bs-target="#popupModal">
                 Pre Register
               </li>
               <li class="nav-item ps-1">
-                <a href="tel:+919082586679" class="text-decoration-none text-white">
+                <a
+                  href="tel:+919082586679"
+                  class="text-decoration-none text-white">
                   <i class="fa-solid fa-phone me-2"></i> +919137649917
                 </a>
               </li>
@@ -274,7 +333,9 @@
                     required />
                 </div>
                 <div class="mb-3">
-                  <label for="user_email" class="form-label">Email address</label>
+                  <label for="user_email" class="form-label"
+                    >Email address</label
+                  >
                   <input
                     type="email"
                     class="form-control inputStyle shadow-none"
@@ -284,7 +345,9 @@
                     autocomplete="off" />
                 </div>
                 <div class="mb-3">
-                  <label for="contact_number" class="form-label">Phone Number</label>
+                  <label for="contact_number" class="form-label"
+                    >Phone Number</label
+                  >
                   <input
                     type="tel"
                     class="form-control inputStyle shadow-none"
@@ -317,15 +380,16 @@
       <section id="overview" class="container p-4 shadow-sm">
         <h3 class="section-heading">Lodha Riservo</h3>
         <p class="overview-para">
-          Enter a world that brings together a masterful blend of luxury living in a
-          verdant forest retreat. This is Lodha Riservo - a home created for those who
-          don't merely seek the best, but have made it a way of life. A development
-          spanning 5 acres with more than 75% open and green spaces, where
-          masterfully-designed facades emerge from Mumbai's largest private forest, with a
-          sprawling 2.5-acre central garden, ensconced in lush woods. Your private
-          residence is a rare creation where every space, every vista is a masterpiece.
-          Lodha Riservo's combination of beautifully-crafted residences and lush forest,
-          create a vivid experience where aspirations are exceeded and life strikes the
+          Enter a world that brings together a masterful blend of luxury living
+          in a verdant forest retreat. This is Lodha Riservo - a home created
+          for those who don't merely seek the best, but have made it a way of
+          life. A development spanning 5 acres with more than 75% open and green
+          spaces, where masterfully-designed facades emerge from Mumbai's
+          largest private forest, with a sprawling 2.5-acre central garden,
+          ensconced in lush woods. Your private residence is a rare creation
+          where every space, every vista is a masterpiece. Lodha Riservo's
+          combination of beautifully-crafted residences and lush forest, create
+          a vivid experience where aspirations are exceeded and life strikes the
           perfect balance.
         </p>
 
@@ -352,9 +416,15 @@
                 class="table table-striped table-borderless border price-table table-pricing">
                 <thead>
                   <tr>
-                    <th scope="col" class="border border-bottom-0 mb-w">Type</th>
-                    <th scope="col" class="border border-bottom-0 mb-w">Carpet Area</th>
-                    <th scope="col" class="border border-bottom-0 border-right-0">
+                    <th scope="col" class="border border-bottom-0 mb-w">
+                      Type
+                    </th>
+                    <th scope="col" class="border border-bottom-0 mb-w">
+                      Carpet Area
+                    </th>
+                    <th
+                      scope="col"
+                      class="border border-bottom-0 border-right-0">
                       Price
                     </th>
                     <th scope="col"></th>
@@ -428,7 +498,10 @@
           </div>
 
           <!--Costing Image  -->
-          <div class="col-md-4 mt-1" data-bs-toggle="modal" data-bs-target="#popupModal">
+          <div
+            class="col-md-4 mt-1"
+            data-bs-toggle="modal"
+            data-bs-target="#popupModal">
             <a>
               <!-- Image -->
               <div class="overlay-container">
@@ -440,7 +513,9 @@
                 <div class="overlay-slider-bottom"></div>
                 <div
                   class="overlay-slider-top d-flex justify-content-center align-items-center">
-                  <button class="btn btn-success text-white enq-btn">Enquire Now</button>
+                  <button class="btn btn-success text-white enq-btn">
+                    Enquire Now
+                  </button>
                 </div>
               </div>
             </a>
@@ -482,7 +557,10 @@
 
           <div class="container">
             <div class="row row-cols-1 row-cols-md-3">
-              <div class="col-md-4" data-bs-toggle="modal" data-bs-target="#popupModal">
+              <div
+                class="col-md-4"
+                data-bs-toggle="modal"
+                data-bs-target="#popupModal">
                 <div class="overlay-container">
                   <img
                     class="img-fluid floor-img"
@@ -502,7 +580,10 @@
                 </div>
               </div>
 
-              <div class="col-md-4" data-bs-toggle="modal" data-bs-target="#popupModal">
+              <div
+                class="col-md-4"
+                data-bs-toggle="modal"
+                data-bs-target="#popupModal">
                 <div class="overlay-container">
                   <img
                     class="img-fluid floor-img"
@@ -523,7 +604,10 @@
                 </div>
               </div>
 
-              <div class="col-md-4" data-bs-toggle="modal" data-bs-target="#popupModal">
+              <div
+                class="col-md-4"
+                data-bs-toggle="modal"
+                data-bs-target="#popupModal">
                 <div class="overlay-container">
                   <img
                     class="img-fluid floor-img"
@@ -597,7 +681,10 @@
               <img class="img-fluid" src="riservo/img/amenities/9.jpg" alt="" />
             </div>
             <div class="carousel-image my-2">
-              <img class="img-fluid" src="riservo/img/amenities/10.jpg" alt="" />
+              <img
+                class="img-fluid"
+                src="riservo/img/amenities/10.jpg"
+                alt="" />
             </div>
           </div>
         </div>
@@ -874,7 +961,8 @@
       <!-- Virtual Tour Section -->
       <section id="virtual-tour" class="container p-4 shadow-sm">
         <div class="container virtual-visit">
-          <div class="bg-image d-flex align-items-center text-white text-center">
+          <div
+            class="bg-image d-flex align-items-center text-white text-center">
             <div class="tour-img">
               <div class="overlay-info">
                 <i
@@ -892,22 +980,27 @@
       <!-- About Section -->
       <section id="about" class="container p-4 shadow-sm">
         <div class="container d-flex justify-content-center">
-          <img class="footer-logo img-fluid" src="riservo/img/logo/logo.jpg" alt="" />
+          <img
+            class="footer-logo img-fluid"
+            src="riservo/img/logo/logo.jpg"
+            alt="" />
         </div>
         <div class="container w-100 mt-2">
           <p class="fs-5 fw-bold text-center">About Lodha Group</p>
           <p class="about-text">
-            Established in 1980, Lodha Group has emerged as one of the premier real estate
-            developers in Mumbai, renowned for its iconic landmarks and contributions to
-            transforming the city's skyline. Led by an effective team of professionals
-            equipped with technical expertise, extensive cross-functional experience, and
-            excellent domain knowledge, the company has successfully delivered various
-            developments in London, Mumbai, and Pune. With offices in New York, Dubai,
-            Singapore, and Shanghai, Lodha Group is a multinational corporation that is
-            committed to delivering excellence and quality in all its projects. With a
-            focus on innovation, sustainability, and customer satisfaction, Lodha Group
-            has established a strong reputation as a reliable and trustworthy developer,
-            setting new standards in the real estate industry.
+            Established in 1980, Lodha Group has emerged as one of the premier
+            real estate developers in Mumbai, renowned for its iconic landmarks
+            and contributions to transforming the city's skyline. Led by an
+            effective team of professionals equipped with technical expertise,
+            extensive cross-functional experience, and excellent domain
+            knowledge, the company has successfully delivered various
+            developments in London, Mumbai, and Pune. With offices in New York,
+            Dubai, Singapore, and Shanghai, Lodha Group is a multinational
+            corporation that is committed to delivering excellence and quality
+            in all its projects. With a focus on innovation, sustainability, and
+            customer satisfaction, Lodha Group has established a strong
+            reputation as a reliable and trustworthy developer, setting new
+            standards in the real estate industry.
           </p>
           <p class="fs-5 fw-bold text-center">RERA Information</p>
           <div class="container text-center">
@@ -917,7 +1010,11 @@
                   <img
                     src="riservo/img/qr/qr1.jpg"
                     loading="lazy"
-                    style="max-width: 100%; height: 100px; display: inline-block" />
+                    style="
+                      max-width: 100%;
+                      height: 100px;
+                      display: inline-block;
+                    " />
                 </div>
               </div>
             </div>
@@ -968,7 +1065,9 @@
                     <!-- Form -->
                     <form id="contact-form-modal" class="text-center">
                       <div class="mb-3">
-                        <label for="user_name_modal" class="form-label">Name</label>
+                        <label for="user_name_modal" class="form-label"
+                          >Name</label
+                        >
                         <input
                           type="text"
                           class="form-control inputStyle shadow-none"
@@ -1027,12 +1126,13 @@
     <footer class="footer p-4">
       <!-- Footer -->
       <p class="disclaimer">
-        Disclaimer: We are an authorized marketing partner for this project. Provided
-        content is given by respective owners and this website and content is for
-        information purpose only and it does not constitute any offer to avail for any
-        services. Prices mentioned are subject to change without prior notice and
-        properties mentioned are subject to availability. You can expect a call, SMS or
-        emails on details registered with us.
+        Disclaimer: We are an authorized marketing partner for this project.
+        Provided content is given by respective owners and this website and
+        content is for information purpose only and it does not constitute any
+        offer to avail for any services. Prices mentioned are subject to change
+        without prior notice and properties mentioned are subject to
+        availability. You can expect a call, SMS or emails on details registered
+        with us.
       </p>
       <hr />
       <p class="copyright-text">
@@ -1049,7 +1149,9 @@
     <div class="container-fluid fixed-bottom action-footer-container">
       <ul class="nav nav-fill action-footer">
         <li class="nav-item ps-1">
-          <a href="https://wa.me/919137649917" class="text-decoration-none text-white">
+          <a
+            href="https://wa.me/919137649917"
+            class="text-decoration-none text-white">
             <i class="fa-brands fa-whatsapp nav-icon"> </i> Whatsapp
           </a>
         </li>
@@ -1059,7 +1161,10 @@
           </a>
         </li>
 
-        <li class="nav-item" data-bs-toggle="modal" data-bs-target="#popupModal">
+        <li
+          class="nav-item"
+          data-bs-toggle="modal"
+          data-bs-target="#popupModal">
           <i class="fa-solid fa-download nav-icon"></i> Brochure
         </li>
       </ul>
