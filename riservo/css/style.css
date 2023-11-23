@@ -700,9 +700,10 @@ aside {
 }
 /* Scale UP  */
 .scale-up-center {
-  -webkit-animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) infinite
+  -webkit-animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
+    infinite both;
+  animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) infinite
     both;
-  animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
 }
 
 @-webkit-keyframes scale-up-center {
@@ -738,4 +739,63 @@ aside {
 }
 .location_features_section .nav-item {
   border: none;
+}
+
+/*  */
+
+.whybuy li:before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: var(--colorPrimary);
+  position: absolute;
+  left: 16px;
+  top: 20px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.whybuy li::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  width: 0;
+  background: var(--colorPrimary);
+  top: 0;
+  z-index: 1;
+  transition: ease all 0.5s;
+}
+
+.whybuy li {
+  background: #eaeaea;
+  margin-bottom: 15px;
+  padding: 15px 10px 15px 30px;
+  position: relative;
+  list-style: none;
+}
+
+.whybuy {
+  content: "";
+  padding-left: 0;
+}
+
+.whybuy li:hover::after {
+  width: 100%;
+  transition: ease all 0.5s;
+}
+
+.whybuy li:hover:before {
+  background: var(--colorWhite);
+  transition: ease all 0.5s;
+}
+
+.whybuy li:hover {
+  color: var(--colorWhite);
+  transition: ease all 0.5s;
+}
+
+.whybuy li span {
+  position: relative;
+  z-index: 2;
 }

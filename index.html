@@ -3,7 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lodha Riservo</title>
+    <meta
+      name="title"
+      content="Lodha Riservo - Codename Evergreen, Ghatkopar-Vikhroli, MUMBAI By Lodha Group" />
+    <meta
+      name="description"
+      content="Lodha Riservo Ghatkopar-Vikhroli, Codename Evergreen. MUMBAI Explore sale in Lodha Riservo. Get Pricing, brochure, floor plan, location and photo gallery." />
+    <meta
+      name="keywords"
+      content="Lodha Riservo,Lodha Riservo Ghatkopar-Vikhroli, MUMBAI,Lodha Riservo Ghatkopar-Vikhroli, MUMBAI By Lodha Group,Codename Evergreen,Ghatkopar-Vikhroli, MUMBAI,Lodha Group,Lodha Riservo  2.5, 3 BHK & 3 BHK With Study Homes Starting, 2.5, 3 BHK & 3 BHK With Study Homes Starting, 2.5, 3 BHK & 3 BHK With Study Homes Starting 2.99 Cr* Onwards,Price Strats 2.99 Cr* Onwards,Lodha Riservo brochure,Lodha Riservo floor plan,Lodha Riservo  master plan,Lodha Riservo location,Lodha Riservo location map,Lodha Riservo configration,Lodha Riservo unit plan,Lodha Riservo amenities,Lodha Riservo details,Lodha Riservo offers,Lodha Riservo booking,Lodha Riservo map direction,Lodha Riservo gallery,Rera No. P51800053072, P51800053253,P51800053072, P51800053253,kids play area,swimming pool,temple,Theatre,gym,party,walking" />
+    <link rel="icon" href="riservo/img/extras/favicon.ico" sizes="16x16" />
+    <title>
+      Lodha Riservo - Codename Evergreen, Ghatkopar-Vikhroli, MUMBAI By Lodha
+      Group
+    </title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="riservo/css/bootstrap.min.css" />
@@ -12,6 +25,11 @@
 
     <!-- Bootstrap JS -->
     <script defer src="riservo/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS and Popper.js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
     <!-- Custom JS -->
     <script defer src="riservo/js/script.js"></script>
 
@@ -45,6 +63,19 @@
     <!-- Google tag (gtag.js) -->
     <script
       async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YV4S7QQ4XT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-YV4S7QQ4XT");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
       src="https://www.googletagmanager.com/gtag/js?id=AW-11418495412"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -55,6 +86,40 @@
       gtag("config", "AW-11418495412");
     </script>
     <!-- End Google tag (gtag.js) -->
+
+    <!-- Event snippet for Lodha Vikhroli - Phone Calls from Website conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-11418495412/FkNgCPGXl_kYELTT4cQq",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
+
+    <!-- Event snippet for Whatsapp Lead conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-11418495412/NPnZCL3Dl_kYELTT4cQq",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
 
     <!-- Meta Pixel Code -->
     <script>
@@ -297,7 +362,8 @@
               </li>
               <li class="nav-item ps-1">
                 <a
-                  href="tel:+919082586679"
+                  onclick="return gtag_report_conversion('tel:+919137649917');"
+                  href="tel:+919137649917"
                   class="text-decoration-none text-white">
                   <i class="fa-solid fa-phone me-2"></i> +919137649917
                 </a>
@@ -351,10 +417,12 @@
                   <input
                     type="tel"
                     class="form-control inputStyle shadow-none"
-                    name="contact_number"
                     id="contact_number"
+                    name="contact_number"
+                    pattern="[0-9]{10}"
                     placeholder="Phone Number"
-                    autocomplete="off"
+                    oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
+                    oninput="setCustomValidity('')"
                     required />
                 </div>
 
@@ -393,7 +461,7 @@
           perfect balance.
         </p>
 
-        <div class="m-4 text-center">
+        <div class="m-4">
           <!-- Download Brochure -->
           <button
             class="download-btn pro-button effectMoveGradient"
@@ -402,6 +470,30 @@
             <i class="fa-solid fa-download nav-icon"></i>
             Download Brochure
           </button>
+        </div>
+
+        <!-- Highlights -->
+        <h3 class="section-heading">Highlights</h3>
+        <div
+          class="row mr0 aos-init aos-animate mt-2"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-duration="3000">
+          <div class="col-md-6">
+            <ul class="whybuy">
+              <li><span>Jain Temple Inside the Project</span></li>
+              <li>
+                <span>25,000 Sq. Ft. International Standard Clubhouse </span>
+              </li>
+              <li><span>Tree Grove with Forest Walk and Tree House</span></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="whybuy">
+              <li><span>Exclusive Large &amp; Spacious Homes</span></li>
+              <li><span>Excellent Views of Mangroves and Hills </span></li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -462,7 +554,7 @@
                       class="border border-left-0 border-top-0 border-bottom-0 price-carpet">
                       1074 Sq.Ft.
                     </td>
-                    <td class="price-amt">₹ 3.52 Cr* Onwards</td>
+                    <td class="price-amt">₹ 3.24 Cr* Onwards</td>
                     <td>
                       <button
                         class="btn btn-sm btn-info effectGradient effectScale enqModal"
@@ -482,7 +574,7 @@
                       class="border border-left-0 border-top-0 border-bottom-0 price-carpet">
                       1161 Sq.Ft.
                     </td>
-                    <td class="price-amt">₹ 3.88 Cr* Onwards</td>
+                    <td class="price-amt">₹ 3.54 Cr* Onwards</td>
                     <td>
                       <button
                         class="btn btn-sm btn-info effectGradient effectScale"
@@ -970,7 +1062,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#popupModal"></i>
                 <h3 class="fs-1">Virtual Visit</h3>
-                <h5>L & T Elixer Reserve</h5>
+                <h5>Lodha Riservo, Vikhroli</h5>
               </div>
             </div>
           </div>
@@ -1137,11 +1229,11 @@
       <hr />
       <p class="copyright-text">
         2023 © Copyright - All Rights Reserved. <br />
-        <a href="riservo/pages/privacy-policy.html">Terms &amp; Conditions</a>
+        <a href="privacy-policy.html">Terms &amp; Conditions</a>
         |
-        <a href="riservo/pages/privacy-policy.html">Privacy Policy</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
         |
-        <a href="riservo/pages/cookies-policy.html">Cookies Policy</a>
+        <a href="cookies-policy.html">Cookies Policy</a>
       </p>
     </footer>
 
@@ -1150,13 +1242,17 @@
       <ul class="nav nav-fill action-footer">
         <li class="nav-item ps-1">
           <a
+            onclick="return gtag_report_conversion('https://wa.me/919137649917');"
             href="https://wa.me/919137649917"
             class="text-decoration-none text-white">
             <i class="fa-brands fa-whatsapp nav-icon"> </i> Whatsapp
           </a>
         </li>
         <li class="nav-item ps-1">
-          <a href="tel:+919137649917" class="text-decoration-none text-white">
+          <a
+            onclick="return gtag_report_conversion('tel:+919137649917');"
+            href="tel:+919137649917"
+            class="text-decoration-none text-white">
             <i class="fa-solid fa-phone me-2"></i> Call Us
           </a>
         </li>
@@ -1168,6 +1264,100 @@
           <i class="fa-solid fa-download nav-icon"></i> Brochure
         </li>
       </ul>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="popupModal"
+      tabindex="-1"
+      aria-labelledby="ModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Title -->
+          <div class="modal-header">
+            <!-- <h1 class="modal-title fs-5" id="ModalLabel">Modal title</h1> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <div class="container text-center">
+              <img src="riservo/img/logo/logo.jpg" alt="" width="150px" />
+              <p class="mt-2">Register Here And Avail The Best Offers!!</p>
+            </div>
+            <div class="container">
+              <!--Enquire Form  -->
+              <div class="enquire-section">
+                <span class="d-block text-center text-black fw-bold my-2">
+                  Get The Best Quote
+                </span>
+                <div class="container">
+                  <!-- Form -->
+                  <form id="contact-form-modal" class="text-center">
+                    <div class="mb-3">
+                      <label for="user_name_modal" class="form-label"
+                        >Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control inputStyle shadow-none"
+                        name="user_name"
+                        id="user_name_modal"
+                        placeholder="Name"
+                        autocomplete="off"
+                        required />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="user_email_modal" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control inputStyle shadow-none"
+                        name="user_email"
+                        id="user_email_modal"
+                        placeholder="Email Address"
+                        autocomplete="off" />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="contact_number_modal" class="form-label"
+                        >Phone Number</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control inputStyle shadow-none"
+                        name="contact_number"
+                        id="contact_number_modal"
+                        placeholder="Phone Number"
+                        autocomplete="off"
+                        minlength="10"
+                        maxlength="10"
+                        required />
+                    </div>
+
+                    <button
+                      type="submit"
+                      class="btn btn-primary download-btn m-2 effectMoveGradient btn btn-info micro-form-btn enqModal effectScale">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Footer -->
+          <div class="modal-footer"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
