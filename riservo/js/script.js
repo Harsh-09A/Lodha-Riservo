@@ -23,5 +23,5 @@ $(".owl-carousel").owlCarousel({
 $(window).ready(function () {
   setTimeout(function () {
     $("#popupModal").modal("show");
-  }, 6000);
+  }, 3000);
 });

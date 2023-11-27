@@ -49,7 +49,7 @@ const handleFormSubmit = async (
     // date_time: await get12HourTime(dateField),
     ip_address: await getIpAddress(),
 
-    to_email: "harsh.autowebbed@gmail.com",
+    to_email: "ads.vineet@gmail.com",
     company_name: "DIGIN",
   };
 
