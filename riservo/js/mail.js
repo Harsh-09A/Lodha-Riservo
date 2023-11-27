@@ -1,5 +1,5 @@
 (function () {
-  emailjs.init("BnRoAjGd5ec2E2VQn");
+  emailjs.init("to9PlFrMMimgruuH0");
 })();
 
 // Get 12 hr Format Time
@@ -49,13 +49,13 @@ const handleFormSubmit = async (
     // date_time: await get12HourTime(dateField),
     ip_address: await getIpAddress(),
 
-    to_email: "ads.vineet@gmail.com",
-    company_name: "DIGIN",
+    to_email: "magicgates99@gmail.com",
+    company_name: "VINEET",
   };
 
   //
 
-  emailjs.send("contact_service", "contact_form", templateParams).then(
+  emailjs.send("contact_service", "contact_form_2", templateParams).then(
     function (response) {
       console.log("SUCCESS!", response.status, response.text);
       // alert("Message Sent Final");
