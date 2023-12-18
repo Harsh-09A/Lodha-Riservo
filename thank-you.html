@@ -50,55 +50,59 @@
     <script src="riservo/js/mail.js"></script>
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11425023227"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11425023227"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'AW-11425023227');
-</script>
+      gtag("config", "AW-11425023227");
+    </script>
 
- <!-- Event snippet for Riservo - Calls from website conversion page
+    <!-- Event snippet for Riservo - Calls from website conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-11425023227/9KfuCJP5o_oYEPuJ8Mcq',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-11425023227/9KfuCJP5o_oYEPuJ8Mcq",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
 
+    <!-- Event snippet for Riservo Vikhroli Lead Form Submission conversion page -->
+    <script>
+      gtag("event", "conversion", {
+        send_to: "AW-11425023227/aNWWCI35o_oYEPuJ8Mcq",
+      });
+    </script>
 
-<!-- Event snippet for Riservo Vikhroli Lead Form Submission conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-11425023227/aNWWCI35o_oYEPuJ8Mcq'});
-</script>
-
-
-<!-- Event snippet for Riservo Whatsapp Lead conversion page
+    <!-- Event snippet for Riservo Whatsapp Lead conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-11425023227/wVlqCJD5o_oYEPuJ8Mcq',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-11425023227/wVlqCJD5o_oYEPuJ8Mcq",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
 
     <!-- Meta Pixel Code -->
     <script>
@@ -234,10 +238,17 @@ function gtag_report_conversion(url) {
     </header>
 
     <main>
-      <section class="container p-4 shadow-sm mt-5 pt-5">
-        <h2 class="section-heading text-center">Thank You</h2>
+      <section id="thanku_section" class="container mt-5 p-4">
+        <div class="text-center">
+          <h2 class="section-heading text-center">Thank You</h2>
+          <p class="text-capitalize">
+            Your form is submitted, We'll get back to you soon.
+          </p>
+          <a href="index.html">
+            <button class="btn btn-primary submit-btn">Back To Home</button>
+          </a>
+        </div>
       </section>
-
       <!-- Sidebar -->
       <aside class="sidebar-container">
         <div class="sidebar">
